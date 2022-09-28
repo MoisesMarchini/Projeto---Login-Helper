@@ -11,7 +11,7 @@ header {
     min-height: 9vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #383c42;
 }
 
@@ -19,6 +19,29 @@ header h1 {
     font-size: 2em;
     color: white;
     padding: 12px;
+}
+
+header .header-title {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+header .header-buttons {
+    padding-left: 8px;
+    padding-right: 8px;
+    min-width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .header-buttons i {
+    font-size: 1.2em;
+    transition: 0.2s ease-in-out;
+}
+
+header .header-buttons i:hover {
+    color: #18acfe;
 }
 
 main {
@@ -83,8 +106,11 @@ main form .password-container {
 
 main form .password-container i {
     position: absolute;
-    right: 8%;
-    top: 35%;
+    right: 7.5%;
+    top: 30%;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
     color: #777;
     cursor: pointer;
 }

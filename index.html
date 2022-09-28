@@ -21,19 +21,28 @@
 <body>
 
     <header>
-        <h1>Login-Helper</h1>
+        <div class="header-title">
+            <h1>Login-Helper</h1>
+        </div>
+        <div class="header-buttons">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#"><i class="fa-solid fa-comments"></i></a>
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
     </header>
 
     <main>
         <form>
             <section class="inputs-container">
 
-                <input type="e-mail" placeholder="example@gmail.com">
+                <input type="e-mail" id="field-email" placeholder="example@gmail.com">
 
                 <div class="password-container">
                     <input type="password" id="field-password" class="field-password" placeholder="*******">
-                    <i class="fa-solid fa-eye" id="eye"></i>
-                    <i class="fa-solid fa-eye-slash" id="eye-closed"></i>
+                    <div class="icons" onpointerenter="ShowPassword()" onpointerleave="HidePassword()">
+                        <i class="fa-solid fa-eye" id="eye"></i>
+                        <i class="fa-solid fa-eye-slash" id="eye-closed"></i>
+                    </div>
                 </div>
 
             </section>
